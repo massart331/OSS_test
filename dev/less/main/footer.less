@@ -1,0 +1,158 @@
+.footer {
+  background: #474a4e;
+  position: relative;
+  font-size: 0;
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background: #3c3f43;
+  }
+  &__title {
+    font-family: 'ProximaNova-Bold';
+    color: #ffffff;
+    font-size: 16px;
+    display: inline-block;
+    margin: 5px 0;
+  }
+  &__link {
+    font-family: 'ProximaNova-Regular';
+    color: #ffffff;
+    font-size: 16px;
+    opacity: 0.4;
+    transition: all 0.3s;
+    display: block;
+    margin: 2px 0;
+    &:hover,&:active,&:focus {
+      color: #ffffff;
+      opacity: 1;
+    }
+  }
+  &__left {
+    font-size: 0;
+    width: 78%;
+    background: #474a4e;
+    position: relative;
+    z-index: 0;
+    padding: 39px 0 0;
+    display: inline-block;
+  }
+  &__item {
+    display: block;
+    padding-right: 5px;
+  }
+  &__list {
+    display: block;
+    vertical-align: top;
+  }
+  &__wrap {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    &:first-child {
+      width: 39%;
+      .footer__item {
+        width: 50%;
+        display: inline-block;
+      }
+    }
+  }
+  &__content {
+    border-bottom: 1px solid #595c5f;
+    margin-right: 4%;
+    padding-bottom: 25px;
+  }
+  &__txt {
+    float: left;
+    font-family: 'ProximaNova-Regular';
+    color: #ffffff;
+    font-size: 14px;
+    opacity: 0.3;
+  }
+  &__dev {
+    float: right;
+    font-family: 'ProximaNova-Regular';
+    color: #999999;
+    font-size: 14px;
+    a {
+      position: relative;
+      bottom: 2px;
+    }
+  }
+  &__foot {
+    margin-right: 4%;
+    padding: 10px 0;
+  }
+  &__right {
+    font-size: 0;
+    width: 22%;
+    padding: 39px 0 0;
+    display: inline-block;
+    vertical-align: top;
+    z-index: 0;
+    position: relative;
+  }
+}
+
+.contact {
+  padding: 0 16px 0 75px;
+  &__number {
+    font-family: 'ProximaNova-Bold';
+    color: #ffffff;
+    font-size: 23px;
+    margin: 0;
+  }
+  &__txt {
+    font-family: 'ProximaNova-Bold';
+    color: #ffffff;
+    font-size: 12px;
+    opacity: 0.3;
+    margin: 0;
+    padding-top: 8px;
+  }
+}
+
+.soc-foot {
+  padding-top: 50px;
+  &__txt {
+    font-family: 'ProximaNova-Bold';
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+  }
+  &__list {
+    font-size: 0;
+  }
+  &__item {
+    display: inline-block;
+    margin: 16px 20px 6px 0;
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background: url(../img/sprite-footer.png) no-repeat;
+    &-2 {
+      background-position: -63px 0;
+    }
+    &-3 {
+      background-position: -129px 0;
+    }
+    &-4 {
+      background-position: 0 -45px;
+    }
+    &-5 {
+      background-position: -63px -45px;
+    }
+    &-6 {
+      background-position: -129px -45px;
+    }
+  }
+}
